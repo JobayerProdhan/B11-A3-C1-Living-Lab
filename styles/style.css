@@ -55,6 +55,13 @@
   .icon-dropdown:hover .dropdown-content {
     display: block;
   }
-  
-  
 
+  
+#big-card{
+    background-color: #F9DF8A;
+    background-image: url('../c1-assets/cute-pet-small.png');
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 400px;
+  
+}
