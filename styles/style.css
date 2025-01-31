@@ -65,3 +65,10 @@
     height: 400px;
   
 }
+
+/* #tshirt {
+    background-image: linear-gradient(to right, #FFF9F4, #F9DF8A), url('../c1-assets/cute-pet-mid.png');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    /* background-size: cover;  /* Ensures the image is scaled correctly */
+
