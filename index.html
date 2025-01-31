@@ -40,11 +40,11 @@
 <body class="adlam-display">
     <header>
         <!-- nav bar design -->
-       <nav>
+       <nav class="hidden lg:block">
         <div class="bg-bg-color">
             <div class="navbar container mx-auto ">
-                <div class="navbar-start">
-                  <div class="dropdown">
+                <div class="navbar-start ">
+                  <div class="dropdown hidden lg:block ">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -69,8 +69,11 @@
                       <li><a>Contact us</a></li>
                     </ul>
                   </div>
-                  <div class="px-2"><img src="c1-assets/logo-header.png" alt=""></div>
-                  <a class=" text-xl">Browse <span class="text-primary">4</span> Pets</a>
+                  <div class="flex ">
+                    <div class="justify-end lg:block lg:px-2 "><img src="c1-assets/logo-header.png" alt=""></div>
+                  </div>
+                  
+                  <a class=" hidden lg:block lg:text-xl ">Browse <span class="text-primary">4</span> Pets</a>
                 </div>
                 <div class="navbar-center hidden lg:flex text-2xl">
                   <ul class="menu menu-horizontal px-1">
@@ -82,15 +85,26 @@
                   </ul>
                 </div>
                 <div class="navbar-end gap-4">
-                    <i class="fa-regular fa-bell"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <a class="btn bg-bg-color border-primary hover:bg-primary hover: border-none rounded-[10px]">Login</a>
-                  <a class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px]">Register</a>
+                    <i class="hidden display:block fa-regular fa-bell"></i>
+                    <i class="hidden display:block fa-solid fa-magnifying-glass"></i>
+                    <div class="hidden lg:block"><a class="btn bg-bg-color border-primary hover:bg-primary hover:border-none rounded-[10px]">Login</a></div>
+                    <div class="hidden lg:block"><a class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px]">Register</a></div>
                 </div>
+              </div>    
+       </nav>
+
+       <nav class="block bg-bg-color lg:hidden ">
+        <div>
+            <div><img src="c1-assets/logo-header.png" alt=""></div>
+            <div class="dropdown">
+                <ul class="dropdown-menu">
+                  <li><a href="#">Find a pet</a></li>
+                  <li><a href="#">Breeds</a></li>
+                  <li><a href="#">Contact us</a></li>
+                </ul>
               </div>
         </div>
-      
-
+        <div class="block lg:hidden"><hr class="border-t-2 border-primary"></div>
        </nav>
 
        <!-- banner section design  -->
