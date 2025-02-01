@@ -40,47 +40,56 @@
 </head>
 <body class="adlam-display">
     <header class=" h-[500px] lg:h-[1100px]">
-       <nav class="fixed top-0 left-0 w-full z-50 bg-bg-color shadow-md">
-        <div class="navbar container mx-auto">
-            <div class="navbar-start">
-                <div class="dropdown hidden lg:block">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
+        <nav class="fixed top-0 left-0 w-full z-50 bg-bg-color shadow-md">
+            <div class="navbar container mx-auto">
+                <div class="navbar-start">
+                    <!-- Dropdown for mobile -->
+                    <div class="dropdown lg:hidden">
+                        <label tabindex="0" class="btn btn-ghost">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow bg-bg-color">
+                            <li><a href="#">Find a Pet</a></li>
+                            <li><a href="#">Breeds</a></li>
+                            <li><a href="#">Subscription Plan</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
                     </div>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                        <li><a>Find a pet</a></li>
-                        <li><a href="">Breeds</a></li>
-                        <li><a>Contact us</a></li>
+        
+                    <div class="flex justify-end lg:block lg:px-2">
+                        <img src="c1-assets/logo-header.png" alt="Logo">
+                    </div>
+                    <a class="hidden lg:block lg:text-xl">Browse <span class="text-primary">4</span> Pets</a>
+                </div>
+                
+                <!-- Center section for large screens -->
+                <div class="navbar-center hidden lg:flex text-2xl">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a href="#">Find a Pet</a></li>
+                        <li><a href="#">Breeds</a></li>
+                        <li><a href="#">Subscription Plan</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="flex justify-end lg:block lg:px-2">
-                    <img src="c1-assets/logo-header.png" alt="Logo">
-                </div>
-                <a class="hidden lg:block lg:text-xl">Browse <span class="text-primary">4</span> Pets</a>
-            </div>
-            <div class="navbar-center hidden lg:flex text-2xl">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a>Find a pet</a></li>
-                    <li><a href="">Breeds</a></li>
-                    <li><a>Contact us</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end gap-4">
-                <i class="hidden lg:block fa-regular fa-bell"></i>
-                <i class="hidden lg:block fa-solid fa-magnifying-glass"></i>
-                <div class="hidden lg:block">
-                    <a class="btn bg-bg-color border-primary hover:bg-primary hover:border-none rounded-[10px]">Login</a>
-                </div>
-                <div class="hidden lg:block">
-                    <a class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px]">Register</a>
+        
+                <!-- Right section for large screens -->
+                <div class="navbar-end gap-4">
+                    <i class="hidden lg:block fa-regular fa-bell"></i>
+                    <i class="hidden lg:block fa-solid fa-magnifying-glass"></i>
+                    <div class="hidden lg:block">
+                        <a class="btn bg-bg-color border-primary hover:bg-primary hover:border-none rounded-[10px]">Login</a>
+                    </div>
+                    <div class="hidden lg:block">
+                        <a class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px]">Register</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        
 
-       <nav class="block bg-bg-color  lg:hidden ">
+       <!-- <nav class="block bg-bg-color  lg:hidden ">
         <div style="width: calc(100% - 40px);" class="flex justify-between mx-auto">
             <div ><img src="c1-assets/logo-header.png" alt=""></div>
             <div class="icon-dropdown">
@@ -96,7 +105,7 @@
               
         </div>
         <div class="block lg:hidden"><hr class="border-t-2 border-primary"></div>
-       </nav>
+       </nav> -->
 
        <!-- banner section design  -->
        <div  class="container mb-[00px]  mx-auto mt-10 lg:mt-24 ">
