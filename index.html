@@ -45,15 +45,31 @@
 
 
 
-        <nav class="fixed top-0 left-0 w-full z-50 bg-bg-color shadow-md">
-            <div class="navbar container mx-auto">
+        <nav class="fixed mx-auto top-0 left-0 w-full z-50 bg-bg-color shadow-md">
+            <div class="navbar container mx-auto flex items-center justify-between">
                 <!-- Left Side (Logo) -->
-                <div class="navbar-start flex justify-between w-full sm:w-auto">
-                    <div class="flex items-center">
-                        <img src="c1-assets/logo-header.png" alt="Logo" class="h-10">
-                    </div>
+                <div class="navbar-start flex items-center">
+                    <img src="c1-assets/logo-header.png" alt="Logo" class="h-10">
                 </div>
-                
+        
+                <!-- Center Section for Large Screens -->
+                <div class="navbar-center hidden sm:flex text-2xl">
+                    <ul class="menu menu-horizontal px-1 flex items-center space-x-4">
+                        <li><a href="#">Find a Pet</a></li>
+                        <li><a href="#">Breeds</a></li>
+                        <li><a href="#">Subscription Plan</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+        
+                <!-- Right Section for Large Screens (Login & Register) -->
+                <div class="navbar-end hidden sm:flex items-center gap-4">
+                    <i class="fa-regular fa-bell"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn bg-bg-color border-primary hover:bg-primary hover:border-none rounded-[10px]">Login</a>
+                    <a class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px]">Register</a>
+                </div>
+        
                 <!-- Right Side (Dropdown Menu for Mobile) -->
                 <div class="navbar-end sm:hidden flex items-center">
                     <div class="dropdown">
@@ -70,30 +86,9 @@
                         </ul>
                     </div>
                 </div>
-        
-                <!-- Center Section for Large Screens -->
-                <div class="navbar-center hidden sm:flex text-2xl">
-                    <ul class="menu menu-horizontal px-1">
-                        <li><a href="#">Find a Pet</a></li>
-                        <li><a href="#">Breeds</a></li>
-                        <li><a href="#">Subscription Plan</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                </div>
-        
-                <!-- Right Section for Large Screens (Login & Register) -->
-                <div class="navbar-end gap-4 hidden sm:flex">
-                    <i class="fa-regular fa-bell"></i>
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                    <div>
-                        <a class="btn bg-bg-color border-primary hover:bg-primary hover:border-none rounded-[10px]">Login</a>
-                    </div>
-                    <div>
-                        <a class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px]">Register</a>
-                    </div>
-                </div>
             </div>
         </nav>
+        
         
        <!-- banner section design  -->
         <div class="container mx-auto my-20 sm:mt-12 lg:mt-24">
@@ -222,7 +217,7 @@
     <!-- small card1 -->
     <div class="bg-white rounded-sm flex lg:w-[275px] lg:h-[120px] sm:w-[230px] sm:h-[110px] mx-auto card-hover-effect">
       <div class="bg-bg-color rounded-sm m-[10px] w-[80px] pt-[25px] pl-[20px]">
-        <img src="c1-assets/bird-cartoon.png" alt="">
+        <img src="c1-assets/dog-cartoon.png" alt="">
       </div>
       <div class="py-[15px] sm:py-[20px]">
         <div class="flex">
@@ -239,7 +234,7 @@
     <!-- small card2 -->
     <div class="bg-white rounded-sm flex lg:w-[275px] lg:h-[120px] sm:w-[230px] sm:h-[110px] mx-auto card-hover-effect">
       <div class="bg-bg-color rounded-sm m-[10px] w-[80px] pt-[25px] pl-[20px]">
-        <img src="c1-assets/bird-cartoon.png" alt="">
+        <img src="c1-assets/fish-cartoon.png" alt="">
       </div>
       <div class="py-[15px] sm:py-[20px]">
         <div class="flex">
@@ -273,7 +268,7 @@
     <!-- small card4 -->
     <div class="bg-white rounded-sm flex lg:w-[275px] lg:h-[120px] sm:w-[230px] sm:h-[110px] mx-auto card-hover-effect">
       <div class="bg-bg-color rounded-sm m-[10px] w-[80px] pt-[25px] pl-[20px]">
-        <img src="c1-assets/bird-cartoon.png" alt="">
+        <img src="c1-assets/fish-cartoon.png" alt="">
       </div>
       <div class="py-[15px] sm:py-[20px]">
         <div class="flex">
@@ -307,7 +302,7 @@
     <!-- small card6 -->
     <div class="bg-white rounded-sm flex lg:w-[275px] lg:h-[120px] sm:w-[230px] sm:h-[110px] mx-auto card-hover-effect">
       <div class="bg-bg-color rounded-sm m-[10px] w-[80px] pt-[25px] pl-[20px]">
-        <img src="c1-assets/bird-cartoon.png" alt="">
+        <img src="c1-assets/dog-cartoon.png" alt="">
       </div>
       <div class="py-[15px] sm:py-[20px]">
         <div class="flex">
@@ -341,7 +336,7 @@
     <!-- small card8 -->
     <div class="bg-white rounded-sm flex lg:w-[275px] lg:h-[120px] sm:w-[230px] sm:h-[110px] mx-auto card-hover-effect">
       <div class="bg-bg-color rounded-sm m-[10px] w-[80px] pt-[25px] pl-[20px]">
-        <img src="c1-assets/bird-cartoon.png" alt="">
+        <img src="c1-assets/dog-cartoon.png" alt="">
       </div>
       <div class="py-[15px] sm:py-[20px]">
         <div class="flex">
@@ -358,7 +353,7 @@
     <!-- small card9 -->
     <div class="bg-white rounded-sm flex lg:w-[275px] lg:h-[120px] sm:w-[230px] sm:h-[110px] mx-auto card-hover-effect">
       <div class="bg-bg-color rounded-sm m-[10px] w-[80px] pt-[25px] pl-[20px]">
-        <img src="c1-assets/bird-cartoon.png" alt="">
+        <img src="c1-assets/fish-cartoon.png" alt="">
       </div>
       <div class="py-[15px] sm:py-[20px]">
         <div class="flex">
