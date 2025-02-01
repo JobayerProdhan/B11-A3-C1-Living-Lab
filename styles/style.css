@@ -66,9 +66,26 @@
   
 }
 
-/* #tshirt {
-    background-image: linear-gradient(to right, #FFF9F4, #F9DF8A), url('../c1-assets/cute-pet-mid.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    /* background-size: cover;  /* Ensures the image is scaled correctly */
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 100%;
+  }
+}
 
+@keyframes blink {
+  50% {
+      border-color: transparent;
+  }
+}
+
+.typing {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid white;
+  display: inline-block;
+ /* animation: typing 3s steps(40, end) infinite, blink 0.7s infinite; */
+ animation: typing 3s steps(100, end) infinite alternate, blink 0.8s step-end infinite;
+}

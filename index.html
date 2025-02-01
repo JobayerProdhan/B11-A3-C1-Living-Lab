@@ -40,59 +40,45 @@
 </head>
 <body class="adlam-display">
     <header class=" h-[500px] lg:h-[1100px]">
-        <!-- nav bar design -->
-       <nav class="hidden lg:block">
-        <div class="bg-bg-color">
-            <div class="navbar container mx-auto ">
-                <div class="navbar-start ">
-                  <div class="dropdown hidden lg:block ">
+       <nav class="fixed top-0 left-0 w-full z-50 bg-bg-color shadow-md">
+        <div class="navbar container mx-auto">
+            <div class="navbar-start">
+                <div class="dropdown hidden lg:block">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="h-5 w-5"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M4 6h16M4 12h8m-8 6h16" />
-                      </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
                     </div>
-                    <ul
-                      tabindex="0"
-                      class="menu menu-sm dropdown-content  rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Find a pet</a></li>
-                      <li>
-                        <a href="">Breeds  </a>
-                      </li>
-                      <li><a>Contact us</a></li>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                        <li><a>Find a pet</a></li>
+                        <li><a href="">Breeds</a></li>
+                        <li><a>Contact us</a></li>
                     </ul>
-                  </div>
-                  <div class="flex ">
-                    <div class="justify-end lg:block lg:px-2 "><img src="c1-assets/logo-header.png" alt=""></div>
-                  </div>
-                  
-                  <a class=" hidden lg:block lg:text-xl ">Browse <span class="text-primary">4</span> Pets</a>
                 </div>
-                <div class="navbar-center hidden lg:flex text-2xl">
-                  <ul class="menu menu-horizontal px-1">
+                <div class="flex justify-end lg:block lg:px-2">
+                    <img src="c1-assets/logo-header.png" alt="Logo">
+                </div>
+                <a class="hidden lg:block lg:text-xl">Browse <span class="text-primary">4</span> Pets</a>
+            </div>
+            <div class="navbar-center hidden lg:flex text-2xl">
+                <ul class="menu menu-horizontal px-1">
                     <li><a>Find a pet</a></li>
-                      <li>
-                        <a href="">Breeds  </a>
-                      </li>
-                      <li><a>Contact us</a></li>
-                  </ul>
+                    <li><a href="">Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                </ul>
+            </div>
+            <div class="navbar-end gap-4">
+                <i class="hidden lg:block fa-regular fa-bell"></i>
+                <i class="hidden lg:block fa-solid fa-magnifying-glass"></i>
+                <div class="hidden lg:block">
+                    <a class="btn bg-bg-color border-primary hover:bg-primary hover:border-none rounded-[10px]">Login</a>
                 </div>
-                <div class="navbar-end gap-4">
-                    <i class="hidden display:block fa-regular fa-bell"></i>
-                    <i class="hidden display:block fa-solid fa-magnifying-glass"></i>
-                    <div class="hidden lg:block"><a class="btn bg-bg-color border-primary hover:bg-primary hover:border-none rounded-[10px]">Login</a></div>
-                    <div class="hidden lg:block"><a class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px]">Register</a></div>
+                <div class="hidden lg:block">
+                    <a class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px]">Register</a>
                 </div>
-              </div>    
-       </nav>
+            </div>
+        </div>
+    </nav>
 
        <nav class="block bg-bg-color  lg:hidden ">
         <div style="width: calc(100% - 40px);" class="flex justify-between mx-auto">
@@ -118,7 +104,7 @@
         <div class="container mx-auto lg:mt-24">
             <!-- text section -->
             <div class="relative z-20">
-              <h1 class="text-[30px] lg:text-[56px] ">Pamper Your Pet, <br> Because They Deserve <br>the Bes</h1>
+              <h1 class="text-[30px] lg:text-[56px] typing ">Pamper Your Pet, <br> Because They Deserve <br>the Bes</h1>
               <p class="text-gray-400">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
               <button class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px] mt-[20px]">Find a pet</button>
             </div>
@@ -400,36 +386,203 @@
             </div>
            
         </section>
+       
+
+        <!-- customer review section  -->
+        <section class="bg-white py-20 px-6">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl lg:text-4xl font-semibold mb-10 text-gray-800">What Our Customers Are Saying</h2>
+                <p class="text-lg text-gray-500 mb-16">Here’s what our happy customers have to say about our pets and products!</p>
+        
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Review Card 1 -->
+                    <div class="transform transition duration-500 hover:scale-105 p-6 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="flex items-center justify-center mb-6">
+                            <img src="c1-assets/customer1.jpg" alt="Customer 1" class="w-20 h-20 rounded-full object-cover border-4 border-white transform transition duration-300 hover:scale-110">
+                        </div>
+                        <p class="text-xl text-white italic mb-4">"This was the best pet product I've bought! My dog loves it!"</p>
+                        <h4 class="text-lg font-semibold text-white">Jane Doe</h4>
+                        <p class="text-sm text-white opacity-80">Dog Owner</p>
+                    </div>
+        
+                    <!-- Review Card 2 -->
+                    <div class="transform transition duration-500 hover:scale-105 p-6 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="flex items-center justify-center mb-6">
+                            <img src="c1-assets/customer2.jpg" alt="Customer 2" class="w-20 h-20 rounded-full object-cover border-4 border-white transform transition duration-300 hover:scale-110">
+                        </div>
+                        <p class="text-xl text-white italic mb-4">"Amazing quality! My cat loves her new toys and treats!"</p>
+                        <h4 class="text-lg font-semibold text-white">John Smith</h4>
+                        <p class="text-sm text-white opacity-80">Cat Owner</p>
+                    </div>
+        
+                    <!-- Review Card 3 -->
+                    <div class="transform transition duration-500 hover:scale-105 p-6 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-xl shadow-xl hover:shadow-2xl">
+                        <div class="flex items-center justify-center mb-6">
+                            <img src="c1-assets/customer3.jpg" alt="Customer 3" class="w-20 h-20 rounded-full object-cover border-4 border-white transform transition duration-300 hover:scale-110">
+                        </div>
+                        <p class="text-xl text-white italic mb-4">"Great service and quality. Will definitely order again!"</p>
+                        <h4 class="text-lg font-semibold text-white">Emily White</h4>
+                        <p class="text-sm text-white opacity-80">Pet Enthusiast</p>
+                    </div>
+                </div>
+        
+                <a href="#" class="mt-12 inline-block text-lg font-semibold text-primary hover:text-primary-light transition duration-300">See More Reviews</a>
+            </div>
+        </section> 
+
+        <!-- subscription section  -->
+
+        <section class="bg-white py-20 px-6">
+            <div class="container mx-auto text-left">
+                <h2 class="text-3xl lg:text-4xl font-semibold mb-10 text-gray-800">Choose Your Subscription Plan</h2>
+                <p class="text-lg text-gray-500 mb-16">Select a plan that fits your needs. Get exclusive perks and discounts for your pets!</p>
+        
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+                    <!-- Monthly Plan Card -->
+                    <div class="flex flex-col sm:flex-row transform transition duration-500 hover:scale-105 p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl">
+                        <!-- New Parent Div with Yellow Border -->
+                        <div class="flex border border-yellow-300 rounded-xl w-full">
+                            <!-- Left Side (Pet Icon & Price) -->
+                            <div class="flex items-center justify-center bg-white p-6 rounded-l-xl sm:rounded-l-none sm:rounded-r-xl sm:w-1/2">
+                                <div class="text-center">
+                                    <div class="mb-4">
+                                        <img src="c1-assets/logo-header.png" alt="Paw Icon" class="w-16 h-16 mx-auto" />
+                                    </div>
+                                    <p class="text-2xl font-semibold text-gray-800">Monthly Plan</p>
+                                    <h3 class="text-4xl font-semibold text-[#FBBF24]">$9.99/month</h3>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Side (Features) -->
+                            <div class="p-6 space-y-4 w-full sm:w-1/2 bg-[#FDE68A]">
+                                <div class="grid grid-cols-2 gap-4 text-gray-800">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-gift text-[#FBBF24] mr-2"></i>
+                                        <p>Exclusive Discounts</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-shipping-fast text-[#FBBF24] mr-2"></i>
+                                        <p>Free Shipping Over $50</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-paw text-[#FBBF24] mr-2"></i>
+                                        <p>Access to All Products</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-clock text-[#FBBF24] mr-2"></i>
+                                        <p>Early Access to New Arrivals</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-trophy text-[#FBBF24] mr-2"></i>
+                                        <p>Special Member Rewards</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-credit-card text-[#FBBF24] mr-2"></i>
+                                        <p>Bonus Points for Purchases</p>
+                                    </div>
+                                </div>
+                                <button class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px] mt-6 w-full">Join Now</button>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <!-- Yearly Plan Card -->
+                    <div class="flex flex-col sm:flex-row transform transition duration-500 hover:scale-105 p-6 bg-white rounded-xl shadow-xl hover:shadow-2xl">
+                        <!-- New Parent Div with Yellow Border -->
+                        <div class="flex border border-yellow-300 rounded-xl w-full">
+                            <!-- Left Side (Pet Icon & Price) -->
+                            <div class="flex items-center justify-center bg-white p-6 rounded-l-xl sm:rounded-l-none sm:rounded-r-xl sm:w-1/2">
+                                <div class="text-center">
+                                    <button class="btn bg-red-500 text-white rounded-[25px] text-[20px] w-2/3 relative -top-[90px] sm:top-[-70px] md:top-[-80px] lg:top-[-90px] transition-all duration-300 ease-in-out transform hover:scale-110 hover:bg-red-600 hover:text-yellow-50 hover:shadow-xl">
+                                        Save 16%
+                                    </button>
+                                    
+                                    <div class="mb-4">
+                                        <img src="c1-assets/logo-header.png" alt="Paw Icon" class="w-16 h-16 mx-auto" />
+                                    </div>
+                                    <p class="text-2xl font-semibold text-gray-800">Yearly Plan</p>
+                                    <h3 class="text-4xl font-semibold text-[#FBBF24]">$99.99/year</h3>
+                                </div>
+                            </div>
+                            
+                            <!-- Right Side (Features) -->
+                            <div class="p-6 space-y-4 w-full sm:w-1/2 bg-[#FDE68A]">
+                                <div class="grid grid-cols-2 gap-4 text-gray-800">
+                                    <div class="flex items-center">
+                                        <i class="fas fa-gift text-[#FBBF24] mr-2"></i>
+                                        <p>Exclusive Discounts</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-shipping-fast text-[#FBBF24] mr-2"></i>
+                                        <p>Free Shipping Over $50</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-paw text-[#FBBF24] mr-2"></i>
+                                        <p>Access to All Products</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-clock text-[#FBBF24] mr-2"></i>
+                                        <p>Early Access to New Arrivals</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-trophy text-[#FBBF24] mr-2"></i>
+                                        <p>Special Member Rewards</p>
+                                    </div>
+                                    <div class="flex items-center">
+                                        <i class="fas fa-credit-card text-[#FBBF24] mr-2"></i>
+                                        <p>Bonus Points for Purchases</p>
+                                    </div>
+                                </div>
+                                <button class="btn bg-primary hover:bg-bg-color hover:border hover:border-primary rounded-[10px] mt-6 w-full">Join Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        
+        
+        
 
         <!-- low price  -->
         <section class="container mx-auto pt-[130px] px-4">
             <!-- Title -->
-            <h1 class="text-[24px] lg:text-[36px] pl-[10px] lg:pl-[30px]">Every Low Price</h1>
+            <h1 class="text-[24px] lg:text-[36px] pl-[10px] lg:pl-[30px] mb-[20px]">Every Low Price</h1>
             
             <!-- Grid Container -->
             <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 items-center">
                 
-                <!-- First Div (Takes 2 Columns on Large Screens, Full Width on Small Screens) -->
-                <div class="lg:col-span-2 flex flex-col lg:flex-row items-center justify-between gap-6 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-[15px] p-6 h-auto lg:h-[600px]">
-                    <div class="text-center lg:text-left">
-                        <p class="text-[20px]">Under Price</p>
-                        <h2 class="text-[32px]">Per Grooming Mitt</h2>
-                        <p class="text-white">(Easy Hair Removed)</p>
-                        <h1 class="text-[56px]">$7.99</h1>
-                    </div>
-                    <div>
-                        <img src="c1-assets/cute-dog-mid.png" alt="Cute Dog" class="max-w-[250px] md:max-w-[300px]">
-                    </div>
-                </div>
+               <!-- First Div (Takes 2 Columns on Large Screens, Full Width on Small Screens) -->
+        <div class="items-end lg:col-span-2 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6 bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] rounded-[15px] p-6 h-auto lg:h-[600px]">
+            
+    <!-- Text Section -->
+    <div class="self-start lg:text-left lg:self-center ">
+        <p class="text-[20px] hidden lg:block">Under Price</p> <!-- Hidden on small screens -->
+        <h2 class="text-[22px] lg:text[32px]">Per Grooming Mitt</h2>
+        <p class="text-white hidden lg:block lg:text-[24px]">(Easy Hair Removed)</p> <!-- Hidden on small screens -->
+        <h1 class="text-[56px] lg:text-black sm:text-white">$7.99</h1> 
+        <!-- Text color white on lg, black on sm -->
+    </div>
+
+    <!-- Image Section -->
+    <div class="self-end">
+        <img src="c1-assets/cute-dog-mid.png" alt="Cute Dog" class="max-w-[250px] md:max-w-[300px] lg:max-w-[400px]">
+    </div>
+
+</div>
+
         
                 <!-- Second Div (Takes 1 Column on Large Screens, Full Width on Small Screens) -->
-                <div id="tshirt" class="lg:col-span-1 flex flex-col justify-between items-center p-6 rounded-[15px] h-auto lg:h-[600px] bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A]">
-                    <div class="text-center">
+                <div id="tshirt" class="lg:col-span-1 flex flex-col justify-between  p-6 rounded-[15px] h-auto lg:h-[600px] bg-gradient-to-br from-[#FFF9F4] to-[#F9DF8A]">
+                    <div class="text-left pl-[20px]  ml-[10px] items-left mt-[50px] ">
                         <h2 class="text-[25px]">T-Shirt For Dogs</h2>
                         <h1 class="text-primary text-[56px]">$7.99</h1>
                     </div>
-                    <div class="mt-4">
-                        <img src="c1-assets/cute-pet-mid.png" alt="Cute Pet" class="max-w-[250px] md:max-w-[300px]">
+                    <div class="mt-4 self-end">
+                        <img src="c1-assets/cute-pet-mid.png" alt="Cute Pet" class="max-w-[250px] md:max-w-[300px] ">
                     </div>
                 </div>
             
@@ -438,7 +591,7 @@
 
 
 
-        <section class="container mx-auto bg-bg-color rounded-[20px] mt-[10px] p-6 lg:mt-[100px] relative -bottom-[200px]">
+        <section class="container mx-auto bg-bg-color rounded-[20px] mt-[10px] p-6 lg:mt-[100px] relative lg:-bottom-[200px]">
             <div class="flex flex-col lg:flex-row items-center lg:gap-[110px] pt-[50px] lg:ml-[70px] text-center lg:text-left">
                 
                 <!-- Image Section -->
@@ -466,26 +619,31 @@
 
     </main>
    
-    <footer class="footer bg-primary text-base-content p-10 pt-[300px]">
+    <footer class="footer bg-secondary text-base-content p-10 pt-[300px]">
         <div>
             
         </div>
         <nav>
-          <h6 class="footer-title">Services</h6>
-          <a class="link link-hover">Branding</a>
-          <a class="link link-hover">Design</a>
-          <a class="link link-hover">Marketing</a>
-          <a class="link link-hover">Advertisement</a>
+            <div class="flex items-center gap-4">
+                <div><img src="c1-assets/logo-footer.png" alt=""></div>
+                <div>
+                    <h1>Browse <span class="text-primary">4</span> Pets</h1>
+                </div>
+            </div>
+            <div>
+                <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+            
         </nav>
         <nav>
-          <h6 class="footer-title">Company</h6>
-          <a class="link link-hover">About us</a>
-          <a class="link link-hover">Contact</a>
-          <a class="link link-hover">Jobs</a>
-          <a class="link link-hover">Press kit</a>
+          
+          <a class="link link-hover">Find a pet</a>
+          <a class="link link-hover">Breeds</a>
+          <a class="link link-hover">Contact us </a>
+         
         </nav>
         <nav>
-          <h6 class="footer-title">Social</h6>
+          <h6 class="footer-title">Follow us</h6>
           <div class="grid grid-flow-col gap-4">
             <a>
                 <i class="fa-brands fa-youtube"></i>
